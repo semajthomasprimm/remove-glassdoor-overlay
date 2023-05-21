@@ -1,0 +1,23 @@
+{
+
+  "manifest_version": 2,
+  "name": "Remove Glassdoor Overlay",
+  "version": "1.0",
+  "author": "Semaj Primm",
+
+  "description": "Removes annoying signin or signup overlay on glassdoor to ensure peaceful browsing.",
+
+  "icons": {
+    "48": "icon.png"
+  },
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://*.glassdoor.com/*"],
+      "js": ["app.js"]
+    }
+  ]
+
+}
