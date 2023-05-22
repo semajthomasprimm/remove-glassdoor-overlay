@@ -15,7 +15,11 @@
   ],
   "content_scripts": [
     {
-      "matches": ["*://*.glassdoor.com/*"],
+      "matches": [
+        "https://*.glassdoor.com/*",
+        "https://*.glassdoor.ca/*",
+        "https://*.glassdoor.co.uk/*"
+      ],
       "js": ["app.js"]
     }
   ]
